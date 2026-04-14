@@ -1,0 +1,9 @@
+[
+    {
+        "id": 352,
+        "dificuldade": "FILTER_BI",
+        "pergunta": "Quero ver só as movimentações ativas, tira as canceladas do painel.",
+        "sql_esperado": "",
+        "resposta_esperada": "Retorna todos os registros da view de movimento filtrando apenas pela situação igual a 'A' (Ativo)[cite: 1, 2]."
+    }
+]

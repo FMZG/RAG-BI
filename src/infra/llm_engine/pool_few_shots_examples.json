@@ -1,0 +1,23 @@
+[
+    {
+        "id": 103,
+        "dificuldade": "EASY",
+        "pergunta": "Quais são as configurações de campos de objeto que estão ativas e marcadas como de uso exclusivo do perfil, ordenadas pela data de registro mais recente?",
+        "sql_esperado": "",
+        "resposta_esperada": "Retorna o ID da relação, o ID do perfil, o ID do objeto, a sequência do campo e o tipo de ação para todas as permissões ativas e exclusivas, priorizando os registros mais novos."
+    },
+    {
+        "id": 92,
+        "dificuldade": "NON-NESTED",
+        "pergunta": "Para fins de auditoria fiscal, liste as naturezas de operação e seus respectivos códigos CFOP e títulos, considerando apenas as naturezas que estão ativas.",
+        "sql_esperado": "",
+        "resposta_esperada": "Retorna a descrição da natureza de operação vinculada ao número e título do CFOP correspondente, filtrando apenas por naturezas ativas através de joins entre as tabelas de natureza, o relacionamento e a tabela de CFOP."
+    },
+    {
+        "id": 291,
+        "dificuldade": "NESTED",
+        "pergunta": "Qual o valor total acumulado de COFINS e a soma das bases de cálculo agrupados por Código de Situação Tributária (CST), filtrando apenas os CSTs que totalizaram mais de R$ 5.000,00 em impostos?",
+        "sql_esperado": "",
+        "resposta_esperada": "Retorna o resumo financeiro do COFINS por tipo de situação tributária, exibindo apenas as categorias de maior impacto fiscal (acima de 5 mil reais)."
+    }
+]

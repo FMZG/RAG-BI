@@ -1,0 +1,30 @@
+[
+    {
+        "id": 158,
+        "dificuldade": "NON-NESTED",
+        "pergunta": "Para fins de auditoria de faturamento, liste o número da nota fiscal, a natureza da operação e o nome do cliente associado a cada movimento de saída registrado na tabela de controle de numeração.",
+        "sql_esperado": "",
+        "resposta_esperada": "Retorna o número da nota, a natureza da operação e o nome do cliente (obtido através do JOIN entre controle de nota, movimento e pessoa) apenas para transações de saída (vendas)."
+    },
+    {
+        "id": 386,
+        "dificuldade": "FILTER_BI",
+        "pergunta": "Me mostra os movimentos de fornecedores que tenham 'DISTRIBUIDORA' no nome.",
+        "sql_esperado": "",
+        "resposta_esperada": "Retorna movimentos ativos vinculados a fornecedores cujo nome contém a palavra 'DISTRIBUIDORA'."
+    },
+    {
+        "id": 247,
+        "dificuldade": "EASY",
+        "pergunta": "Quais são os identificadores (IDs) dos documentos XML que possuem o conteúdo do PDF em Base64 preenchido, ordenados do ID mais recente para o mais antigo?",
+        "sql_esperado": "",
+        "resposta_esperada": "A query retorna uma lista de IDs da tabela tb_nfe_documento_xml onde a coluna do PDF não está vazia, organizada de forma decrescente."
+    },
+    {
+        "id": 162,
+        "dificuldade": "NESTED",
+        "pergunta": "Qual o valor total realizado por conta bancária, considerando apenas movimentos ativos e pagos, filtrando apenas as contas que acumularam um total superior a 10.000,00?",
+        "sql_esperado": "",
+        "resposta_esperada": "A query agrupa os valores financeiros por conta bancária (ex: Conta Corrente, Poupança) e utiliza o HAVING para destacar apenas as contas com maior volume de movimentação financeira real."
+    }
+]
