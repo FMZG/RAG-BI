@@ -1,5 +1,5 @@
 from src.infra.db.repositories.example_repository import MovimentacoesRepository
-from src.data.use_cases.movimentacoes_finder_uc import MovimentacoesFinderUC
+from src.data.use_cases.exemplo_finder_uc import MovimentacoesFinderUC
 
 # Instanciando o repositório e o finder uma vez para serem reutilizados
 repository = MovimentacoesRepository()

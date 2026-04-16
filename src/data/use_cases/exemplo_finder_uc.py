@@ -1,8 +1,8 @@
 import math
 from typing import Dict, List
-from src.domain.interfaces.movimentacoes_finder_uc_interface import MovimentacoesFinderUCInterface
-from src.data.interfaces.movimentacoes_repository_interface import MovimentacoesRepositoryInterface
-from src.data.dto.movimentacoes_dto import MovimentacaoDTO
+from src.domain.interfaces.exemplo_finder_uc_interface import MovimentacoesFinderUCInterface
+from src.data.interfaces.exemplo_repository_interface import MovimentacoesRepositoryInterface
+from src.data.dto.exemplo_dto import MovimentacaoDTO
 
 class MovimentacoesFinderUC(MovimentacoesFinderUCInterface):
 
